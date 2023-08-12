@@ -1,29 +1,24 @@
 variable "region" {
-  default = "ap-southeast-2"
+  type = string
 }
 
 variable "budget_name" {
-    default = ""
     type = string
 }
 
 variable "budget_cost" {
-    default = ""
     type = string
 }
 
 variable "budget_unit" {
-    default = ""
     type = string
 }
 
 variable "time_unit" {
-    default = ""
     type = string
 }
 
 variable "email_address" {
-    default = ""
     type = string
 }
 
