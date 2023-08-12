@@ -1,9 +1,9 @@
 resource "aws_budgets_budget" "account" {
-  name              = var.budget_name
-  budget_type       = "COST"
-  limit_amount      = var.budget_cost
-  limit_unit        = "USD"
-  time_unit         = var.time_unit
+  name         = var.budget_name
+  budget_type  = "COST"
+  limit_amount = var.budget_cost
+  limit_unit   = "USD"
+  time_unit    = var.time_unit
 
   notification {
     comparison_operator        = "GREATER_THAN"
@@ -15,7 +15,7 @@ resource "aws_budgets_budget" "account" {
 
   notification {
     comparison_operator        = "GREATER_THAN"
-    threshold                  = var.min_notification_threshold
+    threshold                  = var.max_notification_threshold
     threshold_type             = "PERCENTAGE"
     notification_type          = "FORECASTED"
     subscriber_email_addresses = [var.email_address]
