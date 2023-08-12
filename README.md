@@ -55,6 +55,11 @@ This is a tool that can set budget alerts for your AWS spendage on the Billing M
   </tr>
 </table> 
 
+<h1>Pre-Requisites</h1>
+
+- Terraform (make sure Terraform is installed to create state file) (any 1.x.x version is fine)
+- AWS Account
+
 <h1>Instructions</h1>
 
 1. Fork/Clone this repo
