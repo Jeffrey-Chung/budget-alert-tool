@@ -14,7 +14,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = ""
+    bucket         = "budget-alert-tool-state-bucket"
     key            = "terraform.tfstate"
     region         = "ap-southeast-2"
     encrypt        = true
