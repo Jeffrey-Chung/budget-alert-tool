@@ -64,4 +64,7 @@ This is a tool that can set budget alerts for your AWS spendage on the Billing M
 5. Create a default S3 bucket then upload the state file that you just created (.terraform/terraform.tfstate). That will be your state bucket
 6. Copy the ARN address of your IAM role and in the `deploy_with_tfvars.yml` file, update the `IAM_ROLE` with the ARN address
 7. In a tfvars file, customize your budget alert with the parameters provided, make sure you copy the name of your state bucket as well.
-8. Commit and Push your progress and a budget alert will be made in the Billing Management console.
+8. Commit and Push your progress.
+9. In `Actions`, click on <b>Deployment - terraform apply or destroy  -> Run workflow</b> and type `build` to start the CI/CD workflow.
+
+NOTE: if you want to destroy your alerts, then follow step 9. but type `destroy` instead
