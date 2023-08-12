@@ -3,23 +3,28 @@ variable "region" {
 }
 
 variable "budget_name" {
-    #type = string
+    default = ""
+    type = string
 }
 
 variable "budget_cost" {
-    #type = string
+    default = ""
+    type = string
 }
 
 variable "budget_unit" {
-    #type = string
+    default = ""
+    type = string
 }
 
 variable "time_unit" {
-    #type = string
+    default = ""
+    type = string
 }
 
 variable "email_address" {
-    #type = string
+    default = ""
+    type = string
 }
 
 variable "min_notification_threshold" {
