@@ -10,10 +10,6 @@ variable "budget_cost" {
     type = string
 }
 
-variable "budget_unit" {
-    type = string
-}
-
 variable "time_unit" {
     type = string
 }
